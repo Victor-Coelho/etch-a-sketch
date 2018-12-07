@@ -19,6 +19,7 @@ for(let i = 0; i < 16; i++) {
 
 document.addEventListener("mouseover", function(event) {
     if(event.target.matches(".column")) {
-        console.log(this);
+        event.target.style.backgroundColor = "#414141";
+        console.log(event.target);
     }
 })
